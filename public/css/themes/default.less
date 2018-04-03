@@ -1,0 +1,141 @@
+/*
+ * The main interface color for Icinga
+ * Used for:
+ *  - Header background
+ *  - Links and buttons
+ *  - Highlighting
+ */
+
+@base0: rgba(255, 255, 255, 1.0);
+@base00: @base0;
+
+@basetransparent: transparent;
+
+@icinga-blue: rgba(120, 255, 255, 1.0);
+
+@body-bg-color: transparent;
+@link-color: @base0;
+@text-color: @base0;
+
+@gray: @base0;
+@gray-light: @base00;
+@gray-lighter: @base00;
+@gray-lightest: @base00;
+
+@tr-active-color: rgba(255, 255, 255, 0.4);
+@tr-hover-color: rgba(255, 255, 255, 0.2);
+
+@background-color-transparent-factor: 0.5;
+@color-ok: rgba(68, 187, 119, @background-color-transparent-factor);
+@color-critical: rgba(255, 85, 102, @background-color-transparent-factor);
+@color-critical-handled: #a82523;
+@color-warning: rgba(255, 170, 68, @background-color-transparent-factor);
+@color-warning-handled: #b58900;
+@color-unknown: rgba(170, 68, 255, @background-color-transparent-factor);
+@color-unknown-handled: #444f83;
+@color-unreachable: #2aa198;
+@color-unreachable-handled: #1d736c;
+@color-pending: rgba(153, 153, 153, @background-color-transparent-factor);
+
+#layout {
+  background-image: url('../img/spring/upper_austria.jpg');
+  /* Stretch the background image, don't duplicate it */
+  -webkit-background-size: cover; /* For WebKit */
+  -moz-background-size: cover;    /* Mozilla */
+  -o-background-size: cover;      /* Opera */
+  background-size: cover;         /* Generic */
+//  opacity:0.7;
+//  filter:alpha(opacity=90);
+  color: @text-color;
+  z-index:-1;
+}
+
+#header {
+  background-color: transparent;
+}
+
+#menu {
+  background-color: transparent;
+  .nav-level-1 > .nav-item {
+    color: @text-color;
+
+    &.active, &:hover {
+      color: @text-color;
+      background-color: @basetransparent;
+    }
+  }
+
+  .nav-level-2 > .nav-item {
+    color: @text-color;
+    //background-color: @basetransparent;
+    background-color: rgba(255, 255, 255, 0.3);
+
+    &.active, &:hover {
+      a {
+        color: @text-color;
+        background-color: @basetransparent;
+      }
+      //background-color: @basetransparent;
+      background-color: rgba(255, 255, 255, 0.4);;
+    }
+  }
+
+
+  .nav-itemxx{
+    &:hover,
+    &:hover > a,
+    &.active,
+    &.active > a {
+      color: @text-color !important;
+      background-color: @basetransparent !important;
+    }
+  }
+}
+
+#login {
+  background-image: url('../img/spring/upper_austria.jpg');
+
+  input[type=submit] {
+    background-color: @icinga-blue;
+  }
+}
+
+.badge {
+  color: @text-color;
+}
+
+textarea {
+  background-color: @base00;
+}
+
+.tabs > li > a {
+  color: @base00;
+}
+.action-link {
+  color: @link-color;
+}
+
+input, select {
+  background-color: @basetransparent;
+}
+
+.boxview a:focus {
+  color: @text-color;
+  text-decoration: underline;
+}
+
+.icinga-module.module-monitoring {
+  .tactical {
+    .box {
+      border-color: @body-bg-color !important;
+    }
+
+    div.box.contents {
+      background: @body-bg-color;
+    }
+  }
+  .state-col * {
+    color: @text-color;
+    //background: @body-bg-color;
+  }
+}
