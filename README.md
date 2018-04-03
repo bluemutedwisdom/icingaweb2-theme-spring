@@ -18,6 +18,8 @@ Just watch the background image instead ;-)
 <img src="https://github.com/dnsmichi/icingaweb2-theme-spring/blob/master/doc/screenshot/login.png" height="300">
 <img src="https://github.com/dnsmichi/icingaweb2-theme-spring/blob/master/doc/screenshot/overview.png" height="300">
 
+The background image was taken by myself in Upper Austria, near Linz.
+
 ## License
 
 (c) 2018 Michael Friedrich <michael.friedrich@gmail.com>
