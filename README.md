@@ -16,7 +16,7 @@ This theme is inspired by spring - warm weather, fuzzy feelings and obviously yo
 Just watch the background image instead ;-)
 
 <img src="https://github.com/dnsmichi/icingaweb2-theme-spring/blob/master/doc/screenshot/login.png" height="300">
-<img src="https://github.com/dnsmichi/icingaweb2-theme-spring/blob/master/doc/screenshot/overview.png" height="300">
+<img src="https://github.com/dnsmichi/icingaweb2-theme-spring/blob/master/doc/screenshot/dashboard.png" height="300">
 
 The background image was taken by myself in Upper Austria, near Linz.
 
